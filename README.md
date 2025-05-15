@@ -1,6 +1,6 @@
 # golang exfil malware POC
 
-A high-performance file exfil/wiper for Backblaze B2 that uses goroutines for concurrent uploads and zstd compression for reduced file sizes.
+A high-performance file exfiltration/stealer for Backblaze B2 that uses goroutines for concurrent uploads and zstd compression for reduced file sizes.
 
 ## Features
 
