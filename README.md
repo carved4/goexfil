@@ -36,7 +36,7 @@ GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -trimpath -o exfilPOC.exe ./cm
 ```bash
 ./uploader.exe -glob "path/to/files/*.txt" -group-size 100000000
 ```
-or just run it to use default config (note, if you do run this, the files it identifies and exfils will be DELETED from the machine it is ran on)
+or just run it to use default config
 
 ## Configuration
 
